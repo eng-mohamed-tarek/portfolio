@@ -1,0 +1,43 @@
+PS1 : 
+
+Assume s is a string of lower case characters.
+
+Write a program that counts up the number of vowels contained in the string s. Valid vowels are: 'a', 'e', 'i', 'o', and 'u'. For example, if s = 'azcbobobegghakl', your program should print:
+Number of vowels: 5
+
+answer : 
+
+count = 0 
+for i in (s) :
+    if i == 'a':
+        count+=1
+    elif i == 'e':
+        count+=1
+    elif i == 'i' :
+        count+=1
+    elif i == 'u':
+        count+=1
+    elif i == 'o'  :
+        count+=1
+print('Number of vowels: ' + str(count))
+
+Assume s is a string of lower case characters.
+
+Write a program that prints the number of times the string 'bob' occurs in s. For example, if s = 'azcbobobegghakl', then your program should print
+Number of times bob occurs is: 2
+
+answer: 
+
+count = -1
+count1 = 0
+for i in (s):
+    count += 1
+
+    if i == 'o':
+                  if count >= 1 and count < len(s)-1:
+                            if s[count - 1] == s[count + 1] == 'b' :
+                                   count1 += 1
+
+
+
+print("Number of times bob occurs is: " + str(count1))
